@@ -33,6 +33,22 @@ Make sure that the path to the `Footer` component is correct based on your proje
 
 ---
 
+_**User**_
+
+generate a commit message
+
+---
+
+_**Assistant**_
+
+Here's a concise commit message for the changes made:
+
+```
+Fix: Import Footer component and render it in the MetatagsAnalyzer component
+```
+
+---
+
 
 
 ---
