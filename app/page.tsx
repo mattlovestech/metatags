@@ -586,6 +586,7 @@ export default function MetatagsAnalyzer() {
           </div>
         </div>
       </div>
+      
       <Footer />
 
     </div>
