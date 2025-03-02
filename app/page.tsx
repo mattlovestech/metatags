@@ -21,6 +21,7 @@ import {
 import { Linkedin, Slack } from "lucide-react"
 import Image from "next/image"
 import { format } from "date-fns"
+import Footer from "@/components/footer"
 
 export default function MetatagsAnalyzer() {
   const [inputUrl, setInputUrl] = useState("")
@@ -585,6 +586,8 @@ export default function MetatagsAnalyzer() {
           </div>
         </div>
       </div>
+      <Footer />
+
     </div>
   )
 }
