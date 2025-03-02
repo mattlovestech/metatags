@@ -231,7 +231,7 @@ export default function MetatagsAnalyzer() {
     <div className="container mx-auto p-4">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-2">Metatags Analyzer</h1>
-        <p className="text-xl text-gray-600 mb-6">Analyze and preview your website's metadata</p>
+        <p className="text-xl text-gray-600 mb-6">Analyze and preview website metadata</p>
         <div className="max-w-3xl mx-auto">
           <div className="flex gap-2">
             <div className="flex-grow">
