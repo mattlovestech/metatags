@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server"
-import axios from "axios"
 import * as cheerio from "cheerio"
 
 export async function GET(request: Request) {
@@ -11,9 +10,8 @@ export async function GET(request: Request) {
   }
 
   try {
-    console.log(`Fetching metadata for URL: ${url}`)
-    const response = await axios.get(url)
-    const html = response.data
+    const response = await fetch(url)
+    const html = await response.text()
     const $ = cheerio.load(html)
 
     const metadata = {
@@ -23,7 +21,6 @@ export async function GET(request: Request) {
       image: $('meta[property="og:image"]').attr("content") || "",
     }
 
-    console.log("Extracted metadata:", metadata)
     return NextResponse.json(metadata)
   } catch (error) {
     console.error("Error fetching metadata:", error)
